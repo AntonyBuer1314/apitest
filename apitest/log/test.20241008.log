@@ -1,0 +1,330 @@
+INFO - 2024-10-08 16:30:56,940 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户登录
+INFO - 2024-10-08 16:30:56,940 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/login
+INFO - 2024-10-08 16:30:56,940 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：用户名和密码正确登录验证
+INFO - 2024-10-08 16:30:56,940 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:56,941 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:56,941 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2024-10-08 16:30:57,011 - sendrequests.py:25 -[sendrequests:send_requests] - cookie：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyODM3NjI1NywianRpIjoiZDVjYzJmMTYtZmM5NS00MzQzLWE4MTctNWUxYWQyYTMyYWRjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTcyODM3NjI1NywiZXhwIjoxNzI4Mzc3MTU3fQ.g78y58rCKFvQCTy_-41opvZEoSsHye26mclhIFqqCs0'}}
+INFO - 2024-10-08 16:30:57,011 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"1586bA5E7C7933a2243cBAfE7a3df","userId":"1708822271616965494"}
+
+INFO - 2024-10-08 16:30:57,013 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:30:57,014 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:30:57,014 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '登录成功'}}]
+INFO - 2024-10-08 16:30:57,015 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->登录成功；实际结果-->登录成功
+INFO - 2024-10-08 16:30:57,016 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,017 - test_debug_api.py:15 -[test_debug_api:setup_class] - 环境初始化....
+INFO - 2024-10-08 16:30:57,017 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,031 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:30:57,031 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:30:57,032 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常新增用户名*新增用户长度在allure中展示校验
+INFO - 2024-10-08 16:30:57,032 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,032 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,033 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:30:57', 'phone': 13800000000, 'token': '1586bA5E7C7933a2243cBAfE7a3df'}}
+INFO - 2024-10-08 16:30:57,039 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+ERROR - 2024-10-08 16:30:57,040 - apiutil.py:151 -[apiutil:extract_data] - 'bool' object is not subscriptable
+INFO - 2024-10-08 16:30:57,040 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增成功'}}]
+INFO - 2024-10-08 16:30:57,040 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->新增成功；实际结果-->新增成功
+INFO - 2024-10-08 16:30:57,041 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,043 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,046 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,055 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:30:57,055 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:30:57,056 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：异常新增用户校验
+INFO - 2024-10-08 16:30:57,056 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,056 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,057 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:30:57', 'phone': 13800000000, 'token': '1586bA5E7C7933a2243cBAfE7a3df'}}
+INFO - 2024-10-08 16:30:57,061 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+INFO - 2024-10-08 16:30:57,062 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增失败'}}]
+ERROR - 2024-10-08 16:30:57,063 - assertions.py:46 -[assertions:contains_assert] - 响应文本断言失败：预期结果为【新增失败】,实际结果为【新增成功】
+ERROR - 2024-10-08 16:30:57,063 - assertions.py:112 -[assertions:assert_result] - 测试失败
+ERROR - 2024-10-08 16:30:57,063 - apiutil.py:115 -[apiutil:specification_yaml] - 
+INFO - 2024-10-08 16:30:57,315 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,327 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,332 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：修改用户
+INFO - 2024-10-08 16:30:57,332 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/updateUser
+INFO - 2024-10-08 16:30:57,332 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常修改用户信息
+INFO - 2024-10-08 16:30:57,333 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,333 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,334 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789#$123', 'role_id': 89588181111112343, 'dates': '2023-12-31', 'phone': 13800000000}}
+INFO - 2024-10-08 16:30:57,341 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"更新成功","msg_code":200}
+
+INFO - 2024-10-08 16:30:57,342 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '更新成功'}}]
+INFO - 2024-10-08 16:30:57,342 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->更新成功；实际结果-->更新成功
+INFO - 2024-10-08 16:30:57,343 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,346 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,350 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,359 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:30:57,360 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:30:57,360 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效删除用户
+INFO - 2024-10-08 16:30:57,360 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,361 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,364 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:30:57,372 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"删除成功!","msg_code":200}
+
+INFO - 2024-10-08 16:30:57,373 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除成功'}}]
+INFO - 2024-10-08 16:30:57,374 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除成功；实际结果-->删除成功!
+INFO - 2024-10-08 16:30:57,375 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,377 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,381 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,389 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:30:57,390 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:30:57,390 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：无效删除用户
+INFO - 2024-10-08 16:30:57,390 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,390 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,391 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 1212718219298}}
+INFO - 2024-10-08 16:30:57,396 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:30:57,396 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:30:57,397 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:30:57,397 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,399 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,430 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,433 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:30:57,434 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:30:57,434 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：删除接口传参类型错误
+INFO - 2024-10-08 16:30:57,435 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,435 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,436 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': '1212718219298'}}
+INFO - 2024-10-08 16:30:57,441 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:30:57,442 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:30:57,442 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:30:57,443 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,445 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,448 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:30:57,455 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户查询
+INFO - 2024-10-08 16:30:57,455 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/queryUser
+INFO - 2024-10-08 16:30:57,455 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效查询用户
+INFO - 2024-10-08 16:30:57,455 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:30:57,456 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:30:57,457 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:30:57,461 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"查询成功!","msg_code":200}
+
+INFO - 2024-10-08 16:30:57,462 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '查询成功'}}, {'eq': {'msg_code': 200}}]
+INFO - 2024-10-08 16:30:57,463 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->查询成功；实际结果-->查询成功!
+INFO - 2024-10-08 16:30:57,463 - assertions.py:61 -[assertions:equal_assert] - 相等断言成功：接口实际结果：{'msg_code': 200}，等于预期结果：{'msg_code': 200}
+INFO - 2024-10-08 16:30:57,464 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:30:57,466 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:30:57,467 - test_debug_api.py:52 -[test_debug_api:teardown_class] - 正在清理测试数据....
+INFO - 2024-10-08 16:39:35,923 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户登录
+INFO - 2024-10-08 16:39:35,923 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/login
+INFO - 2024-10-08 16:39:35,924 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：用户名和密码正确登录验证
+INFO - 2024-10-08 16:39:35,924 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:35,924 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:35,926 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2024-10-08 16:39:35,936 - sendrequests.py:25 -[sendrequests:send_requests] - cookie：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyODM3Njc3NSwianRpIjoiZGIwMzU5MWEtNzEyNC00MTU5LWIwN2UtNjcxNDcwOWJhY2IyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTcyODM3Njc3NSwiZXhwIjoxNzI4Mzc3Njc1fQ.LptkaZVnU73UXJW8koU4jTARzknbwnuDwg1QdQp7rRo'}}
+INFO - 2024-10-08 16:39:35,936 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"930bb38aa09862BCd1d7db1651C36","userId":"1708822271616965494"}
+
+INFO - 2024-10-08 16:39:35,938 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:39:35,939 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:39:35,940 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '登录成功'}}]
+INFO - 2024-10-08 16:39:35,940 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->登录成功；实际结果-->登录成功
+INFO - 2024-10-08 16:39:35,941 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:35,942 - test_debug_api.py:15 -[test_debug_api:setup_class] - 环境初始化....
+INFO - 2024-10-08 16:39:35,943 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:35,957 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:39:35,957 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:39:35,957 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常新增用户名*新增用户长度在allure中展示校验
+INFO - 2024-10-08 16:39:35,958 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:35,958 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:35,959 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:39:35', 'phone': 13800000000, 'token': '930bb38aa09862BCd1d7db1651C36'}}
+INFO - 2024-10-08 16:39:35,965 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+ERROR - 2024-10-08 16:39:35,965 - apiutil.py:151 -[apiutil:extract_data] - 'bool' object is not subscriptable
+INFO - 2024-10-08 16:39:35,966 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增成功'}}]
+INFO - 2024-10-08 16:39:35,966 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->新增成功；实际结果-->新增成功
+INFO - 2024-10-08 16:39:35,967 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:35,969 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:35,973 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:35,980 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:39:35,980 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:39:35,981 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：异常新增用户校验
+INFO - 2024-10-08 16:39:35,982 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:35,982 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:35,982 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:39:35', 'phone': 13800000000, 'token': '930bb38aa09862BCd1d7db1651C36'}}
+INFO - 2024-10-08 16:39:35,987 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+INFO - 2024-10-08 16:39:35,988 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增失败'}}]
+ERROR - 2024-10-08 16:39:35,989 - assertions.py:46 -[assertions:contains_assert] - 响应文本断言失败：预期结果为【新增失败】,实际结果为【新增成功】
+ERROR - 2024-10-08 16:39:35,989 - assertions.py:112 -[assertions:assert_result] - 测试失败
+ERROR - 2024-10-08 16:39:35,990 - apiutil.py:115 -[apiutil:specification_yaml] - 
+INFO - 2024-10-08 16:39:36,215 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,219 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:36,224 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：修改用户
+INFO - 2024-10-08 16:39:36,227 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/updateUser
+INFO - 2024-10-08 16:39:36,227 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常修改用户信息
+INFO - 2024-10-08 16:39:36,227 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:36,227 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:36,229 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789#$123', 'role_id': 89588181111112343, 'dates': '2023-12-31', 'phone': 13800000000}}
+INFO - 2024-10-08 16:39:36,236 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"更新成功","msg_code":200}
+
+INFO - 2024-10-08 16:39:36,237 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '更新成功'}}]
+INFO - 2024-10-08 16:39:36,238 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->更新成功；实际结果-->更新成功
+INFO - 2024-10-08 16:39:36,239 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:36,241 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,245 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:36,251 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:36,251 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:36,251 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效删除用户
+INFO - 2024-10-08 16:39:36,251 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:36,252 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:36,253 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:39:36,261 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"删除成功!","msg_code":200}
+
+INFO - 2024-10-08 16:39:36,261 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除成功'}}]
+INFO - 2024-10-08 16:39:36,262 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除成功；实际结果-->删除成功!
+INFO - 2024-10-08 16:39:36,263 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:36,266 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,269 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:36,274 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:36,276 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:36,277 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：无效删除用户
+INFO - 2024-10-08 16:39:36,277 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:36,277 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:36,284 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 1212718219298}}
+INFO - 2024-10-08 16:39:36,289 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:39:36,290 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:39:36,290 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:39:36,291 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:36,294 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,298 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:36,301 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:36,301 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:36,301 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：删除接口传参类型错误
+INFO - 2024-10-08 16:39:36,302 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:36,302 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:36,303 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': '1212718219298'}}
+INFO - 2024-10-08 16:39:36,309 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:39:36,311 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:39:36,311 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:39:36,312 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:36,315 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,319 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:36,323 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户查询
+INFO - 2024-10-08 16:39:36,323 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/queryUser
+INFO - 2024-10-08 16:39:36,324 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效查询用户
+INFO - 2024-10-08 16:39:36,324 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:36,324 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:36,325 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:39:36,334 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"查询成功!","msg_code":200}
+
+INFO - 2024-10-08 16:39:36,335 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '查询成功'}}, {'eq': {'msg_code': 200}}]
+INFO - 2024-10-08 16:39:36,335 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->查询成功；实际结果-->查询成功!
+INFO - 2024-10-08 16:39:36,336 - assertions.py:61 -[assertions:equal_assert] - 相等断言成功：接口实际结果：{'msg_code': 200}，等于预期结果：{'msg_code': 200}
+INFO - 2024-10-08 16:39:36,337 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:36,339 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:36,340 - test_debug_api.py:52 -[test_debug_api:teardown_class] - 正在清理测试数据....
+INFO - 2024-10-08 16:39:59,459 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户登录
+INFO - 2024-10-08 16:39:59,460 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/login
+INFO - 2024-10-08 16:39:59,460 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：用户名和密码正确登录验证
+INFO - 2024-10-08 16:39:59,460 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,460 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,461 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2024-10-08 16:39:59,471 - sendrequests.py:25 -[sendrequests:send_requests] - cookie：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyODM3Njc5OSwianRpIjoiYTliYjZjY2QtZmFiNS00NzU0LTg5MzMtNWFkY2ExMTYzOGQ3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTcyODM3Njc5OSwiZXhwIjoxNzI4Mzc3Njk5fQ._QNlplUpEalrCIW4Fh54LM9Whb9RbOdTRf6P_XD5tyQ'}}
+INFO - 2024-10-08 16:39:59,471 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"0BBbf0bDE3dCe10FDd85FAD1B629E","userId":"1708822271616965494"}
+
+INFO - 2024-10-08 16:39:59,472 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:39:59,473 - apiutil.py:146 -[apiutil:extract_data] - 提取接口的返回值：
+INFO - 2024-10-08 16:39:59,473 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '登录成功'}}]
+INFO - 2024-10-08 16:39:59,475 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->登录成功；实际结果-->登录成功
+INFO - 2024-10-08 16:39:59,475 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,476 - test_debug_api.py:15 -[test_debug_api:setup_class] - 环境初始化....
+INFO - 2024-10-08 16:39:59,476 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,489 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:39:59,489 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:39:59,489 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常新增用户名*新增用户长度在allure中展示校验
+INFO - 2024-10-08 16:39:59,490 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,490 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,491 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:39:59', 'phone': 13800000000, 'token': '0BBbf0bDE3dCe10FDd85FAD1B629E'}}
+INFO - 2024-10-08 16:39:59,495 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+ERROR - 2024-10-08 16:39:59,496 - apiutil.py:151 -[apiutil:extract_data] - 'bool' object is not subscriptable
+INFO - 2024-10-08 16:39:59,497 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增成功'}}]
+INFO - 2024-10-08 16:39:59,497 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->新增成功；实际结果-->新增成功
+INFO - 2024-10-08 16:39:59,498 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,500 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,504 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,513 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：新增用户
+INFO - 2024-10-08 16:39:59,513 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/addUser
+INFO - 2024-10-08 16:39:59,514 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：异常新增用户校验
+INFO - 2024-10-08 16:39:59,514 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,514 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,515 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2024-10-08 16:39:59', 'phone': 13800000000, 'token': '0BBbf0bDE3dCe10FDd85FAD1B629E'}}
+INFO - 2024-10-08 16:39:59,521 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"新增成功","msg_code":200}
+
+INFO - 2024-10-08 16:39:59,522 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '新增失败'}}]
+ERROR - 2024-10-08 16:39:59,522 - assertions.py:46 -[assertions:contains_assert] - 响应文本断言失败：预期结果为【新增失败】,实际结果为【新增成功】
+ERROR - 2024-10-08 16:39:59,523 - assertions.py:112 -[assertions:assert_result] - 测试失败
+ERROR - 2024-10-08 16:39:59,523 - apiutil.py:115 -[apiutil:specification_yaml] - 
+INFO - 2024-10-08 16:39:59,764 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,770 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,775 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：修改用户
+INFO - 2024-10-08 16:39:59,775 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/updateUser
+INFO - 2024-10-08 16:39:59,775 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：正常修改用户信息
+INFO - 2024-10-08 16:39:59,776 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,776 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,777 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789#$123', 'role_id': 89588181111112343, 'dates': '2023-12-31', 'phone': 13800000000}}
+INFO - 2024-10-08 16:39:59,781 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"更新成功","msg_code":200}
+
+INFO - 2024-10-08 16:39:59,782 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'status_code': 200}}, {'contains': {'msg': '更新成功'}}]
+INFO - 2024-10-08 16:39:59,783 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->更新成功；实际结果-->更新成功
+INFO - 2024-10-08 16:39:59,784 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,787 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,791 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,805 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:59,805 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:59,805 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效删除用户
+INFO - 2024-10-08 16:39:59,806 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,806 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,806 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:39:59,811 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"删除成功!","msg_code":200}
+
+INFO - 2024-10-08 16:39:59,811 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除成功'}}]
+INFO - 2024-10-08 16:39:59,811 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除成功；实际结果-->删除成功!
+INFO - 2024-10-08 16:39:59,812 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,814 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,819 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,823 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:59,824 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:59,824 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：无效删除用户
+INFO - 2024-10-08 16:39:59,824 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,824 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,825 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 1212718219298}}
+INFO - 2024-10-08 16:39:59,829 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:39:59,830 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:39:59,830 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:39:59,831 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,832 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,838 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,846 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：删除用户
+INFO - 2024-10-08 16:39:59,846 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/deleteUser
+INFO - 2024-10-08 16:39:59,847 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：删除接口传参类型错误
+INFO - 2024-10-08 16:39:59,847 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,847 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,848 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': '1212718219298'}}
+INFO - 2024-10-08 16:39:59,855 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO - 2024-10-08 16:39:59,855 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '删除失败'}}]
+INFO - 2024-10-08 16:39:59,856 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->删除失败；实际结果-->删除失败，用户id不存在!
+INFO - 2024-10-08 16:39:59,856 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,859 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,862 - conftest.py:23 -[conftest:start_test_end] - -----------------接口测试开始---------------------
+INFO - 2024-10-08 16:39:59,866 - sendrequests.py:32 -[sendrequests:run_main] - 接口名称：用户查询
+INFO - 2024-10-08 16:39:59,867 - sendrequests.py:33 -[sendrequests:run_main] - 接口请求地址：http://127.0.0.1:8787/dar/user/queryUser
+INFO - 2024-10-08 16:39:59,867 - sendrequests.py:34 -[sendrequests:run_main] - 测试用例名称：有效查询用户
+INFO - 2024-10-08 16:39:59,868 - sendrequests.py:35 -[sendrequests:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO - 2024-10-08 16:39:59,868 - sendrequests.py:36 -[sendrequests:run_main] - cookies：None
+INFO - 2024-10-08 16:39:59,870 - sendrequests.py:42 -[sendrequests:run_main] - 请求参数：{'data': {'user_id': 123839387391912}}
+INFO - 2024-10-08 16:39:59,874 - sendrequests.py:26 -[sendrequests:send_requests] - 接口返回信息：{"error_code":null,"msg":"查询成功!","msg_code":200}
+
+INFO - 2024-10-08 16:39:59,875 - assertions.py:90 -[assertions:assert_result] - yaml文件的预期结果：[{'contains': {'msg': '查询成功'}}, {'eq': {'msg_code': 200}}]
+INFO - 2024-10-08 16:39:59,876 - assertions.py:39 -[assertions:contains_assert] - 字符串包含断言成功：预期结果-->查询成功；实际结果-->查询成功!
+INFO - 2024-10-08 16:39:59,876 - assertions.py:61 -[assertions:equal_assert] - 相等断言成功：接口实际结果：{'msg_code': 200}，等于预期结果：{'msg_code': 200}
+INFO - 2024-10-08 16:39:59,877 - assertions.py:109 -[assertions:assert_result] - 测试成功
+INFO - 2024-10-08 16:39:59,879 - conftest.py:25 -[conftest:start_test_end] - -----------------接口测试结束---------------------
+INFO - 2024-10-08 16:39:59,880 - test_debug_api.py:52 -[test_debug_api:teardown_class] - 正在清理测试数据....
